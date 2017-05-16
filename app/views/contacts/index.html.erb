@@ -1,0 +1,9 @@
+
+<h1 class="contacts">Welcome to all the contacts page!!!</h1>
+
+<div class="contacts">
+  <% @all_contacts.each do |contact| %>
+  <li><a href="/contacts/<%= contact.id %>"><%= "#{contact.first_name} #{contact.last_name}" %></a></li>
+  <%# "#{contact.first_name} #{contact.last_name}" %>
+  <% end %>
+</div>

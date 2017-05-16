@@ -1,0 +1,11 @@
+<h1>Here is contact # <%= @contact.id %>:</h1>
+
+<p><%= @contact.first_name %></p>
+<p><%= @contact.last_name %></p>
+<p><%= @contact.email %></p>
+<p><%= @contact.phone_number %></p>
+<p><%= @contact.full_name %></p>
+<p><%= @contact.easy_strftime %></p>
+
+<a href="/contacts/<%= @contact.id %>/edit">Edit</a>
+<a href="/contacts">Back to all contacts</a>
